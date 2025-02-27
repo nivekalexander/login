@@ -11,27 +11,37 @@ dependencies:
   flutter:
     sdk: flutter
 
-  webview_flutter: ^4.7.0
-  webview_flutter_web: ^0.2.2
-  webview_flutter_wkwebview: ^3.0.4
+  # 🔹 Navegación desacoplada
+  go_router: ^13.2.0
 
+  # 🔹 Manejo de estado
   provider: ^6.1.2 # Alineado con el chasis y home
+  flutter_bloc: ^8.1.3 # NECESARIO para auth_data_bloc.dart
+  equatable: ^2.0.5 # Ayuda a comparar estados en Bloc
 
+  # 🔹 Comunicación HTTP
+  dio: ^5.4.0 # NECESARIO para login_service.dart
   http: ^1.2.0
 
+  # 🔹 Almacenamiento local y seguro
+  shared_preferences: ^2.2.2
+  flutter_secure_storage: ^9.2.2
+
+  # 🔹 Firebase para autenticación
   firebase_core: ^2.27.0
   firebase_auth: ^4.17.0
   cloud_firestore: ^4.15.0
   firebase_storage: ^11.6.0
 
-  shared_preferences: ^2.2.2
+  # 🔹 WebView (si es necesario en la UI de Login)
+  webview_flutter: ^4.7.0
+  webview_flutter_web: ^0.2.2
+  webview_flutter_wkwebview: ^3.0.4
 
-  go_router: ^13.2.0
-
-  flutter_secure_storage: ^9.2.2
-
+  # 🔹 Animaciones
   flutter_animate: ^4.3.0
 
+  # 🔹 Log para depuración
   logger: ^2.0.2+1
 
 dev_dependencies:
@@ -41,4 +51,4 @@ dev_dependencies:
   flutter_lints: ^3.0.1
 
 flutter:
-  uses-material-design: true
+ 
