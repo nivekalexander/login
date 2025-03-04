@@ -1,0 +1,53 @@
+name: login
+description: Microfrontend de autenticación en Flutter.
+publish_to: 'none' # Este paquete no se publicará
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # 🔹 Manejo de rutas (igual que en chasis para compatibilidad)
+  go_router: ^10.2.0  
+
+  # 🔹 Cliente HTTP para autenticación
+  dio: ^5.4.0
+  http: ^0.13.6  # Solo si hay dependencias que lo requieran
+
+  # 🔹 Manejo de estado con BLoC
+  flutter_bloc: ^8.1.3
+  provider: ^6.0.5
+
+  # 🔹 Manejo de JSON
+  json_annotation: ^4.8.1
+
+  # 🔹 Almacenamiento seguro (para credenciales)
+  flutter_secure_storage: ^9.2.0
+  shared_preferences: ^2.2.2
+
+  # 🔹 Firebase para autenticación (si se requiere)
+  firebase_auth: ^4.15.3
+  firebase_core: ^2.24.2
+
+  # 🔹 Registro de logs
+  logger: ^2.0.2+1
+
+  # 🔹 Inyección de dependencias
+  get_it: ^7.6.0
+
+  # 🔹 Comparación eficiente de estados en Bloc
+  equatable: ^2.0.5
+
+dev_dependencies:
+  flutter_lints: ^3.0.0
+  flutter_test:
+    sdk: flutter
+
+  # 🔹 Generación de código para JSON
+  build_runner: ^2.4.4
+  json_serializable: ^6.7.1
+
+flutter:
+  uses-material-design: true
