@@ -1,6 +1,6 @@
 name: login
 description: Microfrontend de autenticación en Flutter.
-publish_to: 'none' # Este paquete no se publicará
+publish_to: 'none' # Este paquete no se publicará en pub.dev
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
@@ -9,7 +9,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  # 🔹 Manejo de rutas (igual que en chasis para compatibilidad)
+  # 🔹 Manejo de rutas (go_router igual que en chasis para compatibilidad)
   go_router: ^10.2.0  
 
   # 🔹 Cliente HTTP para autenticación
