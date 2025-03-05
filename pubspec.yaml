@@ -1,6 +1,6 @@
 name: login
 description: Microfrontend de autenticación en Flutter.
-publish_to: 'none' # Este paquete no se publicará en pub.dev
+publish_to: 'none' # Este paquete no se publicará
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
@@ -26,10 +26,6 @@ dependencies:
   # 🔹 Almacenamiento seguro (para credenciales)
   flutter_secure_storage: ^9.2.0
   shared_preferences: ^2.2.2
-
-  # 🔹 Firebase para autenticación (si se requiere)
-  firebase_auth: ^4.15.3
-  firebase_core: ^2.24.2
 
   # 🔹 Registro de logs
   logger: ^2.0.2+1
